@@ -207,7 +207,7 @@
 
 												\newcommand{\cvproject}[1]{%
 													%% the color here in the template is `accent`
-													template is accent
+													{\textbf{\color{accent}#1}\par}
 													\smallskip\normalsize
 													}
 
