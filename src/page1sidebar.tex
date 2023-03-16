@@ -1,7 +1,5 @@
 
-\cvsection{Education}
-\cvevent{Utah State University}{Electrical and Computer Engineering}{ August 2020 -- Current}{}
-\cvevent{Uintah High School}{}{ 2014 -- 2018 }{}
+% \cvevent{Uintah High School}{}{}{}
 % \cvachievement{\faTrophy}{}{Received accolades at Atos for Best Performance in team.}
 % \cvachievement{\faTrophy}{}{Received Best Debut Award at Atos. }
 % %\divider
@@ -28,6 +26,64 @@
 %\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
 
 \cvsection{Projects}
+\cvproject{Interpreter and Compiler from Scratch}
+\begin{itemize}
+    \item An interpreter and a compiler for a dynamic programmign language with a python/rust like
+        syntax that lexes tokens from an input, parses the token stream using a recursive descent
+		either interprets or compiles and executes the final AST (including
+        function objects) with high quality error handling and messages to the end user in a REPL.
+\end{itemize}
+\smallskip
+\smallskip
+\cvproject{Open Source Contributions}
+\begin{itemize}
+    \item \textbf{esp-hal}: Work on embedded-hal SPI implementation
+    \item \textbf{slint-ui}: Treesitter parser and various additions
+\end{itemize}
+\smallskip
+\smallskip
+\cvproject{DACx0501 Library}
+\begin{itemize}
+    \item A Rust library supporting the Texas Instruments x0501 family of DACs using the
+        rust embedded-hal traits
+\end{itemize}
+\smallskip
+\smallskip
+\cvproject{Sodoku Solver}
+\begin{itemize}
+	\item A Sodoku Solver that generates a valid (although not
+		necessarily solvable) Sodoku puzzle and uses a backtracing algorithm to
+		solve it. 
+\end{itemize}
+\smallskip
+\cvproject{BFS Maze Solver}
+\begin{itemize}
+    \item A maze solver that uses a Breadth First Search to find the shortest
+        path from the start to the finish of a puzzle created as an array of
+        arrays filled with ones and zeros. Problem from Google Foo Bar
+        Challenge.
+\end{itemize}
+\smallskip
+\cvproject{Aggietime Clock API}
+\begin{itemize}
+	\item A Rocket web app that acts as a man in the middle to
+		re-expose the USU Aggietime API in an accessible way. This app parses
+		tokens from the HTML responses of Aggietime and then forwards along a
+		proper request with the credentials from the end user.
+\end{itemize}
+\smallskip
+\cvproject{Dense Neural Network from Scratch}
+\begin{itemize}
+	\item A dense, fully connected neural network made to recognize hanwritten
+		digits from the MNIST dataset written from scratch in numpy.
+\end{itemize}
+\smallskip
+\cvproject{Static Website Generator}
+\begin{itemize}
+	\item Personal website and blog with content being written in markdown and then generated using a
+		custom static site generator with awesome code syntax highlighting and theming.
+\end{itemize}
+\smallskip
 \cvproject{Multithreaded Mandelbrot Generator}
 \begin{itemize}
 	\item A Mandelbrot image generator written in rust that splits the 
@@ -36,47 +92,8 @@
 		bytes followed by the image data.
 \end{itemize}
 \smallskip
-\smallskip
-\cvproject{Aggietime Clock API}
-\begin{itemize}
-	\item A Rocket web app written in rust that acts as a man in the middle to
-		re-expose the USU Aggietime API in an accessible way. This app parses
-		tokens from the HTML responses of Aggietime and then forwards along a
-		proper request with the credentials from the end user.
-\end{itemize}
-\smallskip
-\smallskip
-\cvproject{Sodoku Solver}
-\begin{itemize}
-	\item A Sodoku Solver written in C++ that generates a valid (although not
-		necessarily solvable) Sodoku puzzle and uses a backtracing algorithm to
-		solve it. 
-\end{itemize}
-\smallskip
-\smallskip
-\cvproject{BFS Maze Solver}
-\begin{itemize}
-	\item A maze solver written in C++ that uses a Breadth First Search to find 
-		the shortest path from the start to the finish of a puzzle created as an 
-		array of arrays filled with ones and zeros. Problem from Google Foo Bar
-		Challenge.
-\end{itemize}
-\smallskip
-\smallskip
-\cvproject{Sorting Algorithm Analysis}
-\begin{itemize}
-	\item Implementations and analysis of several sorting algorithms. The time
-		to run each algorithm was saved to csv files and analysis was done with
-		numpy in Jupyter notebooks.
-\end{itemize}
-\smallskip
-\smallskip
-\cvproject{Dense Neural Network from Scratch}
-\begin{itemize}
-	\item A dense, fully connected neural network made to recognize hanwritten
-		digits from the MNIST dataset written from scratch in numpy.
-\end{itemize}
-\medskip
-\raggedleft\textbf{Github Profile} \\
-\smallskip
-\raggedleft\qrcode{https://github.com/jrmoulton}
+
+% \medskip
+% \raggedleft\textbf{Github Profile} \\
+% \smallskip
+% \raggedleft\qrcode{https://github.com/jrmoulton}

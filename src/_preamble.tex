@@ -2,6 +2,7 @@
 \geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
 \usepackage{qrcode}
 \usepackage{fontspec}
+\usepackage{hyperref}
 \setmainfont{SF Pro Display}
 \definecolor{VividPurple}{HTML}{000000}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
@@ -13,4 +14,10 @@
 \colorlet{body}{LightGrey}
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+\hypersetup{
+  colorlinks   = true,    % Colours links instead of ugly boxes
+  urlcolor     = black,    % Colour for external hyperlinks
+  linkcolor    = blue,    % Colour of internal links
+  citecolor    = red      % Colour of citations
+}
 \begin{document}
