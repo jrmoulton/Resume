@@ -26,47 +26,39 @@
 %\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
 
 \cvsection{Projects}
-\cvproject{Interpreter and Compiler from Scratch}
+\cvproject{\href{https://github.com/jrmoulton/leviosa}{Reverse Enginnering Standing Desk}}
 \begin{itemize}
-    \item An interpreter and a compiler for a dynamic programmign language with a python/rust like
-        syntax that lexes tokens from an input, parses the token stream using a recursive descent
-		either interprets or compiles and executes the final AST (including
-        function objects) with high quality error handling and messages to the end user in a REPL.
+	\item Reverse engineered the communication between the user controller and the motor controller.
+		A voltmeter to find the power lines, logic analyzer to watch signals on all 6 ethernet wires.
+		Recognized as a half-duplex uart communication. Fully decoded the structure of frames, packets and
+		segments.
+	\item Built an embedded application to act as a remote control using bluetooth on dual-core esp32s3. (in progress)
 \end{itemize}
 \smallskip
-\smallskip
-\cvproject{Open Source Contributions}
+\cvproject{\href{https://github.com/jrmoulton/interpreter-rs}{Compiler from Scratch}}
 \begin{itemize}
-    \item \textbf{esp-hal}: Work on embedded-hal SPI implementation
-    \item \textbf{slint-ui}: Treesitter parser and various additions
+    \item Side Project: An interpreter and a compiler with a custom parser for a programmign language with a
+		rust like syntax. Compiles to a bytecode and is run in a custom virtual machine with high quality
+		error handling and messages to the end user.
+	\item Class: CS5300 C compiler from scratch in Java
 \end{itemize}
 \smallskip
-\smallskip
-\cvproject{DACx0501 Library}
+\cvproject{\href{https://docs.rs/dacx0501/latest/dacx0501/index.html}{DACx0501 Library}}
 \begin{itemize}
     \item A Rust library supporting the Texas Instruments x0501 family of DACs using the
         rust embedded-hal traits
 \end{itemize}
 \smallskip
-\smallskip
-\cvproject{Sodoku Solver}
+\cvproject{Open Source Contributions}
 \begin{itemize}
-	\item A Sodoku Solver that generates a valid (although not
-		necessarily solvable) Sodoku puzzle and uses a backtracing algorithm to
-		solve it. 
+    \item \textbf{esp-hal}: Work on embedded-hal SPI implementation
+    \item \textbf{slint-ui}: Treesitter parser and various additions
+    \item \textbf{floem}: Various efforts to improve the UI framework
 \end{itemize}
 \smallskip
-\cvproject{BFS Maze Solver}
+\cvproject{\href{https://github.com/jrmoulton/Aggietime}{Aggietime Clock API}}
 \begin{itemize}
-    \item A maze solver that uses a Breadth First Search to find the shortest
-        path from the start to the finish of a puzzle created as an array of
-        arrays filled with ones and zeros. Problem from Google Foo Bar
-        Challenge.
-\end{itemize}
-\smallskip
-\cvproject{Aggietime Clock API}
-\begin{itemize}
-	\item A Rocket web app that acts as a man in the middle to
+	\item A web app that acts as a man in the middle to
 		re-expose the USU Aggietime API in an accessible way. This app parses
 		tokens from the HTML responses of Aggietime and then forwards along a
 		proper request with the credentials from the end user.
@@ -78,15 +70,15 @@
 		digits from the MNIST dataset written from scratch in numpy.
 \end{itemize}
 \smallskip
-\cvproject{Static Website Generator}
+\cvproject{\href{https://github.com/jrmoulton/jrmoulton-web}{Static Website Generator}}
 \begin{itemize}
 	\item Personal website and blog with content being written in markdown and then generated using a
 		custom static site generator with awesome code syntax highlighting and theming.
 \end{itemize}
 \smallskip
-\cvproject{Multithreaded Mandelbrot Generator}
+\cvproject{\href{https://github.com/jrmoulton/Mandelbrot-Multithreaded}{Multithreaded Mandelbrot Generator}}
 \begin{itemize}
-	\item A Mandelbrot image generator written in rust that splits the 
+	\item A Mandelbrot image generator that splits the 
 		image's rows to be processed by multiple threads. The final output format 
 		is a bpm where the image header information is written as a stream of raw 
 		bytes followed by the image data.
